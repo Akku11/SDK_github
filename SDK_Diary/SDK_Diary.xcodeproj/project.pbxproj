@@ -8,28 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		824515332C1864CA00995109 /* SDK_Diary.docc in Sources */ = {isa = PBXBuildFile; fileRef = 824515322C1864CA00995109 /* SDK_Diary.docc */; };
-		824515392C1864CA00995109 /* SDK_Diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8245152E2C1864CA00995109 /* SDK_Diary.framework */; };
-		8245153E2C1864CA00995109 /* SDK_DiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245153D2C1864CA00995109 /* SDK_DiaryTests.swift */; };
 		8245153F2C1864CA00995109 /* SDK_Diary.h in Headers */ = {isa = PBXBuildFile; fileRef = 824515312C1864CA00995109 /* SDK_Diary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		824515492C18651600995109 /* CredentialValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824515482C18651600995109 /* CredentialValidator.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8245153A2C1864CA00995109 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 824515252C1864CA00995109 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8245152D2C1864CA00995109;
-			remoteInfo = SDK_Diary;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8245152E2C1864CA00995109 /* SDK_Diary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDK_Diary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		824515312C1864CA00995109 /* SDK_Diary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDK_Diary.h; sourceTree = "<group>"; };
 		824515322C1864CA00995109 /* SDK_Diary.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SDK_Diary.docc; sourceTree = "<group>"; };
-		824515382C1864CA00995109 /* SDK_DiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDK_DiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8245153D2C1864CA00995109 /* SDK_DiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDK_DiaryTests.swift; sourceTree = "<group>"; };
 		824515482C18651600995109 /* CredentialValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,14 +27,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		824515352C1864CA00995109 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				824515392C1864CA00995109 /* SDK_Diary.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +34,6 @@
 			isa = PBXGroup;
 			children = (
 				824515302C1864CA00995109 /* SDK_Diary */,
-				8245153C2C1864CA00995109 /* SDK_DiaryTests */,
 				8245152F2C1864CA00995109 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +42,6 @@
 			isa = PBXGroup;
 			children = (
 				8245152E2C1864CA00995109 /* SDK_Diary.framework */,
-				824515382C1864CA00995109 /* SDK_DiaryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,14 +54,6 @@
 				824515482C18651600995109 /* CredentialValidator.swift */,
 			);
 			path = SDK_Diary;
-			sourceTree = "<group>";
-		};
-		8245153C2C1864CA00995109 /* SDK_DiaryTests */ = {
-			isa = PBXGroup;
-			children = (
-				8245153D2C1864CA00995109 /* SDK_DiaryTests.swift */,
-			);
-			path = SDK_DiaryTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,24 +88,6 @@
 			productReference = 8245152E2C1864CA00995109 /* SDK_Diary.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		824515372C1864CA00995109 /* SDK_DiaryTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 824515452C1864CA00995109 /* Build configuration list for PBXNativeTarget "SDK_DiaryTests" */;
-			buildPhases = (
-				824515342C1864CA00995109 /* Sources */,
-				824515352C1864CA00995109 /* Frameworks */,
-				824515362C1864CA00995109 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8245153B2C1864CA00995109 /* PBXTargetDependency */,
-			);
-			name = SDK_DiaryTests;
-			productName = SDK_DiaryTests;
-			productReference = 824515382C1864CA00995109 /* SDK_DiaryTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,9 +99,6 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					8245152D2C1864CA00995109 = {
-						CreatedOnToolsVersion = 15.4;
-					};
-					824515372C1864CA00995109 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -170,20 +117,12 @@
 			projectRoot = "";
 			targets = (
 				8245152D2C1864CA00995109 /* SDK_Diary */,
-				824515372C1864CA00995109 /* SDK_DiaryTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8245152C2C1864CA00995109 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		824515362C1864CA00995109 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,23 +141,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		824515342C1864CA00995109 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8245153E2C1864CA00995109 /* SDK_DiaryTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8245153B2C1864CA00995109 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8245152D2C1864CA00995109 /* SDK_Diary */;
-			targetProxy = 8245153A2C1864CA00995109 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		824515402C1864CA00995109 /* Debug */ = {
@@ -412,40 +335,6 @@
 			};
 			name = Release;
 		};
-		824515462C1864CA00995109 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KQEQWZ2GRB;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "orgIdentifier.iosApp.SDK-DiaryTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		824515472C1864CA00995109 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KQEQWZ2GRB;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "orgIdentifier.iosApp.SDK-DiaryTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -463,15 +352,6 @@
 			buildConfigurations = (
 				824515432C1864CA00995109 /* Debug */,
 				824515442C1864CA00995109 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		824515452C1864CA00995109 /* Build configuration list for PBXNativeTarget "SDK_DiaryTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				824515462C1864CA00995109 /* Debug */,
-				824515472C1864CA00995109 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
